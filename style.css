@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+background-color: #111;
+}
+
+.taskbar{
+    color: white;
+    padding-top: 300px;
+    padding-left: 400px;
+    font-size: 30px;
+    background-image: url(/3492868.gif);
+    background-size: cover;
+    padding-bottom: 600px;
+}
+.taskbar ul li{
+    list-style: none;
+    position:relative;
+}
+
+.taskbar ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.taskbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.05s;
+}
+
+.taskbar ul li:hover:after{
+    width:10%;
+}
+
+.aboutme{
+    background-color: #111;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: white;
+    text-align: center;
+
+}
+
+.aboutmename{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.proj1{
+    background-color: white;
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
+    padding: 10px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    color:black;
+}
+
+.proj2{
+    background-color: white;
+    padding: 10px;
+    margin-right: 200px;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    float: right;
+    color:black;
+    margin-top: 100px;
+}
+.projects{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    background-image: url(/3492868.gif);
+    background-size: cover;
+    
+    
+}
+.footer{
+    
+    margin-top: 300px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contact{
+    color: white;
+    margin-top: 500px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contactdetails{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.github{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.proj1para{
+    font-size: 20px;
+}
+.proj2para{
+    font-size: 20px;
+}

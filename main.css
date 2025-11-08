@@ -1,0 +1,55 @@
+
+:root
+{
+  --background-color: #FFFF;
+  --font-color: #181C14;
+  
+}
+
+body
+{
+  background-color: var(--background-color);
+}
+
+
+
+nav .dirlinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .dirlinks li {
+  margin-bottom: 8px;
+}
+
+nav .dirlinks a {
+  color: blue;
+  text-decoration: underline;
+  font-family: ui-monospace, Menlo, "Cascadia Code", Courier New, monospace;
+  font-size: 1rem;
+}
+
+
+#name
+{
+  font-size: 50px;
+  color: var(--font-color);
+
+}
+
+#sw
+{
+  font-size: 30px;
+  color: var(--font-color);
+}
+
+#result
+{
+  color: var(--font-color)
+}
+
+#footer
+{
+  color: var(--font-color)
+}

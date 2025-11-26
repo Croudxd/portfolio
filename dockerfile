@@ -6,5 +6,5 @@ RUN cd backend && go build -o server
 FROM gcr.io/distroless/base-debian12
 WORKDIR /app
 COPY --from=build /app .
-EXPOSE 8080
+EXPOSE 8083
 CMD ["backend/server"]

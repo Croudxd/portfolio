@@ -28,7 +28,7 @@ func main() {
 	// router.GET("/about", getAbout)
 	// router.GET("/projects", getProjects)
 
-	router.Run(":8080")
+	router.Run(":8083")
 }
 
 // func getHome()

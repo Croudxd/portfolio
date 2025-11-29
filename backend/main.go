@@ -19,7 +19,7 @@ func main() {
 	})
 
 	router.GET("/projects", func(c *gin.Context) {
-		c.File(".pages/projects/projects.html")
+		c.File("./pages/projects/projects.html")
 	})
 
 	router.Run(":8083")

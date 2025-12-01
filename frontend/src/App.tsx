@@ -11,11 +11,12 @@ function App() {
   return (
     <>
           <Intro />
+          <About />
           <Work />
-          <Experience title="Perforce" paragraph="alskdjfalksdjf" timeworking="4 Months" howlongsinceleft={new Date("July 12 2024")} />
+          <Experience title="Perforce" paragraph="Software engineer intern" timeworking="4 Months" howlongsinceleft={new Date("July 12 2024")} />
           <ProjectTitle />
-          <Projects title="Stash" paragraph="cool shit" link="https:gofuckurself.com" />
-          <Projects title="Strategy-backtest-engine" paragraph="trading algorithm, i make money" link="https:ilovegoths.com" />
+          <Projects title="Stash" paragraph="Full-stack application with AI Vision to make cooking at home easier." link="https:gofuckurself.com" />
+          <Projects title="Strategy-backtest-engine" paragraph="trading backtester + live trading engine." link="https:ilovegoths.com" />
           <EducationTitle />
           <Education />
           <TechTitle />
@@ -32,24 +33,19 @@ export default App
 function Intro(){
     return(
         <>
-            <div className="goodmorning">👋 Good <GetTime /> Im Benjamin</div>
+            <div className="goodmorning"><h1>👋 Good <GetTime /> I am Benjamin</h1></div>
         </>
             
     )
 }
-
-function AboutTite(){
-    return(
-        <></>
-    )
-
-}
 function About(){
     return(
-        <></>
+        <>
+            <div className="about">Inspiring quantative/software developer.</div>
+        </>
+            
     )
 }
-
 function GetTime(){
     const now = new Date();   
     const hours: number = now.getHours();
@@ -100,7 +96,7 @@ function getSinceDate({timeSinceThen} : SinceProp ): string{
 
 function Work(){
     return(
-        <div className="worktitle">Work
+        <div className="worktitle"><h2>Work</h2>
         <hr />
         </div>
     )
@@ -127,7 +123,7 @@ function Experience({title, paragraph, timeworking, howlongsinceleft} : Experien
 function ProjectTitle()
 {
     return(
-        <div className="projecttitle">Projects
+        <div className="projecttitle"><h2>Projects</h2>
             <hr />
         </div>
     )
@@ -143,7 +139,7 @@ function Projects({title, paragraph, link} : ProjectProps)
         <>
         <div className="projects">
             <div> { title } </div>
-            <div> { paragraph } </div>
+            <div className="projectspara"> { paragraph } </div>
             <a href={ link }>link</a>
         </div>
         </>
@@ -154,7 +150,7 @@ function Projects({title, paragraph, link} : ProjectProps)
 function EducationTitle()
 {
     return(
-        <div>Education
+        <div className="educationTitle"> <h2>Education</h2>
             <hr/ >
         </div>
     )
@@ -168,7 +164,7 @@ function Education(){
 
 function TechTitle(){
     return(
-        <div className="techtitle">Tech
+        <div className="techtitle"><h2>Tech</h2>
             <hr />
         </div>   
     )
@@ -189,7 +185,7 @@ function Socials(){
     return(
       <div className="socialrow">
         <div className="github"><a href="https://github.com/Croudxd"><img className="githubimage" src={github}></img></a></div> 
-        <div className="linkedin"><a href="https://github.com/Croudxd"><img className="linkedinimage" src={linkedin}></img></a></div> 
+        <div className="linkedin"><a href="https://www.linkedin.com/in/benjamin-c-8a89011b0/"><img className="linkedinimage" src={linkedin}></img></a></div> 
       </div> 
     )
 }

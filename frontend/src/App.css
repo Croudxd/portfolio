@@ -3,9 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #D3DAD9;
 }
 
+body{
 
+  background: #37353E;
+}
 .goodmorning {
 
 
@@ -16,9 +20,12 @@
 }
 hr{
     max-width: 500px;
-    color: #1793D1;
+    color: #55515A;
 }
 
+h2{
+  font-size: 15px;
+}
 .experience{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -26,14 +33,15 @@ hr{
     border-width: 1px;
     max-width: 500px;
     margin: auto;
-    border-color: black;
+    border-color: #44444E;
     margin-top: 15px;
+    background: #2E2C33;
 }
 .timeworking{
 }
 
 .sincedate{
-
+  color: #715A5A;
 }
 
 .projects{
@@ -43,8 +51,9 @@ hr{
     border-width: 1px;
     max-width: 500px;
     margin: auto;
-    border-color: black;
+    border-color: #44444E;
     margin-top: 15px;
+    background: #2E2C33;
 }
 
 .projecttitle{
@@ -52,8 +61,17 @@ hr{
     margin-top: 25px; 
 }
 
+.projectspara{
+  color: #715A5A;
+  padding: 3px;
+}
+
 .techtitle{
     margin-top: 25px; 
+}
+
+.about{
+  color:#715A5A;
 }
 
 

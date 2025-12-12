@@ -8,19 +8,14 @@ func main() {
 
 	router := gin.Default()
 
-	router.Static("/assets", "./")
+	// Serve the React build folder
+	router.Static("/", "./dist")
 
-	router.GET("/", func(c *gin.Context) {
-		c.File("./pages/main/main.html")
-	})
-
-	router.GET("/about", func(c *gin.Context) {
-		c.File("./pages/about/about.html")
-	})
-
-	router.GET("/projects", func(c *gin.Context) {
-		c.File("./pages/projects/projects.html")
+	// SPA fallback: always serve index.html for unknown routes
+	router.NoRoute(func(c *gin.Context) {
+		c.File("./dist/index.html")
 	})
 
 	router.Run(":8083")
 }
+
